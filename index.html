@@ -12,25 +12,507 @@
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
 </head>
 
-<body class="null">
-    <div class="container flex flex-col mx-auto">
-        <!-- Main container with navigation and header content -->
+<body class="bg-gray-100">
+    <div>
+
+        <!-- HEADER -->
+        <div class="mx-auto bg-white">
+            <!-- Main container with navigation and header content -->
+             <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
+                <div class="px-4">
+                    <img clas="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="logo">
+                </div>
+                <div class="hidden md:flex items-center justify-between text-black gap-12">
+                    <a href="#product" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Product</a>
+                    <a href="#features" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Features</a>
+                    <a href="#pricing" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Get Started</a>
+                    <a href="#company" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Contact</a>
+                </div>
+                <div class="hidden gap-8 p-4 items-center md:flex ">
+                    <button class="text-sm font-normal text-gray-700 hover:text-black">Log In</button>
+                    <button class="px-4 py-2 text-sm font-bold text-gray-700 bg-green-600 rounded-xl hover:bg-pink-500">Sign Up</button>
+                </div>
+                <button class="p-4 md:hidden" id="mobile-menu-toggle">
+                    <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-6 w-6"
+                    fill="none"
+                    >
+                    <g clip-path="url(#clip0_429_11066)">
+                      <path
+                        d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                        stroke="#292929"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_429_11066">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 0.000915527)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+
+                <!-- Mobile Menu -->
+                <div class="absolute hidden md:hidden flex flex-col items-start justify-center w-full gap-3 overiddenflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
+                    <a href="#product" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Product</a>
+                    <a href="#features" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Features</a>
+                    <a href="#pricing" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Get Started</a>
+                    <a href="#company" class="text-sm font-normal text-dark-grey-700 hover:text-green-900">Contact</a>
+
+                    <button class="text-sm font-normal text-gray-700 hover:text-black">Log In</button>
+                    <button class="px-4 py-2 text-sm font-bold text-gray-700 bg-green-600 rounded-xl hover:bg-pink-500">Sign Up</button>
+                </div>
+             </div>
+        </div>
+    
+        
+
+
+        <!-- Product -->
+        <div class="w-full grid grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5" id="#product">
+           <!-- Wide full-width container for additional content -->
+            <div class="flex flex-col justify-center col-span-1 text-center lg:text-start items-center">
+                <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+                    The Clever Place to Keep Your Cache
+                </h1>
+                <p class="ml-4 mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                    Cache Bank is designed exclusively for software developers. We understand your financial needs are as unique as the code you write.
+                    Our services offer cutting-edge financial solutions that help you take care of your cash.
+                </p>
+
+                <div class="ml-3 flex flex-col items-center gap-4 lg:flex-row">
+                    <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                        Join Cache Now
+                    </button>
+                    <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                        Join Our Discord Server
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero image -->
+            <div class="items-center justify-end hidden col-span-1 md:flex ">
+                <img class="w-4/5 rounded-md" src="./assets/component-2/hero-image.png" alt="Header image">
+            </div>
+        </div>
+
+
+
+    
+        <!-- Features // Endorsements-->
+        <div class="w-full" id="#features">
+            <!-- Centered container for more content -->
+             <div class="container flex flex-col items-center gap-8 mx-auto my-40">
+                <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
+                    Endorsed by global companies like
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
+                    <span>
+                        <img src="./assets/component-2/logos/amazon-logo.svg">
+                    </span>
+                    <span>
+                        <img src="./assets/component-2/logos/minecraft-logo.svg">
+                    </span>
+                    <span>
+                        <img src="./assets/component-2/logos/nike-logo.svg">
+                    </span>
+                    <span>
+                        <img src="./assets/component-2/logos/steam-logo.svg">
+                    </span>
+                </div>
+             </div>
+        </div>
+    
+
+
+
+        <!-- Pricing -->
+        <div class="container mx-auto py-10 flex flex-col items-center justify-center" id="#pricing">
+            <!-- Wide full-width container for additional content -->
+
+            <!-- Header -->
+             <div class="flex flex-col items-center justify-center mt-12 bg-white sm:rounded-full">
+                <h2 class="mb-4 text-3xl lg:text-4xl font-extrabold text-dark-grey-900 text-center">
+                    Elevate Your Banking with Cache
+                </h2>
+                <p class="text-lg text-center lg:w-7/12 text-grey-700">
+                    We merge cutting-edge banking with a deep understading of software developers's 
+                    needs. Experience tailored financial solutions, advanced security, and tech-focused
+                    support designed just for you.
+                </p>
+             </div>
+             <!-- end of Header -->
+
+
+             <!-- Card Section -->
+             <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
+
+
+                <!-- 1st card -->
+                <div class="bg-white flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-400 transition duration-300">
+                    <!-- icon -->
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
+                        <img src="./assets/component-3/feature-icons/developer-focused-accounts.svg">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-center px-6">
+                        <h4 class="text-2xl font-extrabold">
+                            Developer-Focused Account Plans
+                        </h4>
+                        <p class="font-medium text-gray-700">
+                            Tailored accounts offering benefits like high-yield savings and exclusive investment 
+                            options, designed specifically for softwaredevelopers' financial needs and career growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2nd card -->
+                <div class="bg-white flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-400 transition duration-300">
+                    <!-- icon -->
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
+                        <img src="./assets/component-3/feature-icons/advanced-online-banking.svg">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-center px-6">
+                        <h4 class="text-2xl font-extrabold">
+                            Advanced Online Banking Platform
+                        </h4>
+                        <p class="font-medium text-gray-700">
+                            A cutting-edge, intuitive online banking interface with features link
+                            API intergrations, allowing developers to seamlessly manage finances
+                            alongside their coding projects.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3rd card -->
+                <div class="bg-white flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-400 transition duration-300">
+                    <!-- icon -->
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
+                        <img src="./assets/component-3/feature-icons/tech-savvy-customer.svg">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-center px-6">
+                        <h4 class="text-2xl font-extrabold">
+                            Tech-Savvy Customer Support
+                        </h4>
+                        <p class="font-medium text-gray-700">
+                            Expert support team with a deep understading of tech industry,
+                            providing relevant financial advice and assistance specifically for software developers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4th card -->
+                <div class="bg-white flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-400 transition duration-300">
+                    <!-- icon -->
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
+                        <img src="./assets/component-3/feature-icons/high-level-security.svg">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-center px-6">
+                        <h4 class="text-2xl font-extrabold">
+                            High-Level Security Features
+                        </h4>
+                        <p class="font-medium text-gray-700">
+                            State-of-the-art cybersecurity measures, including multi-factor authentication and ecryption
+                            ensuring the safety of digital assets, which is crucial for tech professionals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 5th card -->
+                <div class="bg-white flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-400 transition duration-300">
+                    <!-- icon -->
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
+                        <img src="./assets/component-3/feature-icons/innovative-financial-tools.svg">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-center px-6">
+                        <h4 class="text-2xl font-extrabold">
+                            Innovative Financial Tools
+                        </h4>
+                        <p class="font-medium text-gray-700">
+                            Access to unique financial tools and resources, like project funding 
+                            account and tech startup investment opportunities, catering to the  
+                            enterpreneurial spirit of developers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 6th card -->
+                <div class="bg-white flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-400 transition duration-300">
+                    <!-- icon -->
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
+                        <img src="./assets/component-3/feature-icons/community-networking-opps.svg">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-center px-6">
+                        <h4 class="text-2xl font-extrabold">
+                            Community and Networking Opportunities
+                        </h4>
+                        <p class="font-medium text-gray-700"> 
+                            Exclusive access to tech events, webinars, and a community
+                            platform for networking, collaboration, and sharing insights within 
+                            the software development industry.
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    
+
+
+
+        <!-- Company -->
+        <div class="w-full" id="#company">  
+            <div class="container flex flex-col items-center gap-16 mx-auto my-32 ">
+                <div class="grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8">
+                    
+
+                    <!-- statistics block -->
+                     <div class="flex flex-col items-center">
+                        <h3  class="text-base font-extrabold leading-tight text-center text-dark-grey-900">
+                            <span id="countto1" countto="250">250</span>+
+                        </h3>
+                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">
+                            Hours Saved Sitting in the Bank
+                        </p>
+                     </div>
+                     <div class="flex flex-col items-center">
+                        <h3  class="text-base font-extrabold leading-tight text-center text-dark-grey-900">
+                            <span id="countto2" countto="12">250</span>m
+                        </h3>
+                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">
+                            Cache Saved
+                        </p>
+                     </div>
+                     <div class="flex flex-col items-center">
+                        <h3  class="text-base font-extrabold leading-tight text-center text-dark-grey-900">
+                            <span id="countto3" countto="2600" data-decimal="1">2.8</span>k+
+                        </h3>
+                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">
+                            Global Partners
+                        </p>
+                     </div>
+                     <div class="flex flex-col items-center">
+                        <h3  class="text-base font-extrabold leading-tight text-center text-dark-grey-900">
+                            <span id="countto4" countto="18000">18,000</span>+
+                        </h3>
+                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">
+                            Happy Developers
+                        </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Getting Started -->
+         <div class="w-full">
+
+            <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+
+                <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
+                    <!-- getting started img -->
+                    <div class="bg-cover bg-center hidden lg:block rounded-3xl">
+                        <img src="./assets/component-4/getting-started.png">
+                    </div>
+                    
+                    <!-- Header -->
+                    <div class="flex flex-col gap-16">
+                        <div class="flex flex-col gap-2 text-center md:text-start">
+                            <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">
+                                How Cache Works?
+                            </h2>
+                            <p class="text-base font-medium leading-7 text-dark-grey-600">
+                                <span style="color: rgb(55,65,81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                    Cache Bank simplifies sign-up with a user-friendly website,
+                                    streamlined account options, and an efficient verification process,
+                                    making banking accessible and hassle-free for developers.
+                                </span>
+                            </p>
+                        </div>
+
+                        <!-- 1 -->
+                        <div class="grid w-full grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-10">
+                            <div class="flex flex-col items-start gap-1">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                                    <span class="text-base font-bold leading-7 text-white">1</span>
+                                </div>
+                                <h3 class="text-base font-bold leading-tight text-dark-grey-900">
+                                    <span style="border-color: rgb(217,217,227); border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y:0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ;--tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zone: ; --tw-numeric-figure: ; ---tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: 0px: --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.6); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-background-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ;color: var(--tw-prose-bold); font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                        Visit Cache Bank Website
+                                    </span>
+                                </h3>
+                                <p class="text-base font-medium leading-7 text-dark-grey-600">
+                                    <span style="color:rgb(55,65,81); font-family: ui-sans-serif, system-ui, -apple-system,'Segeo UI', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                                        Go to Cache Bank, click "Sign Up" or "Open an Account."
+                                    </span>
+                                </p>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="flex flex-col items-start gap-1">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
+                                    <span class="text-base font-bold leading-7 text-white">2</span>
+                                </div>
+                                <h3 class="text-base font-bold leading-tight text-dark-grey-900">
+                                    <span style="border-color: rgb(217,217,227); border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y:0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ;--tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ;  --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zone: ; --tw-numeric-figure: ; ---tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: 0px: --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.6); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-background-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ;color: var(--tw-prose-bold); font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                        Choose Account Type
+                                    </span>
+                                </h3>
+                                <p class="text-base font-medium leading-7 text-dark-grey-600">
+                                    <span style="color:rgb(55,65,81); font-family: ui-sans-serif, system-ui, -apple-system,'Segeo UI', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                                        Select from checking, savings, or developer-specific accounts.
+                                    </span>
+                                </p>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="flex flex-col items-start gap-1">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
+                                    <span class="text-base font-bold leading-7 text-white">3</span>
+                                </div>
+                                <h3 class="text-base font-bold leading-tight text-dark-grey-900">
+                                    <span style="border-color: rgb(217,217,227); border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y:0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ;--tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ;  --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zone: ; --tw-numeric-figure: ; ---tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: 0px: --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.6); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-background-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ;color: var(--tw-prose-bold); font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                        Provide Personal Type
+                                    </span>
+                                </h3>
+                                <p class="text-base font-medium leading-7 text-dark-grey-600">
+                                    <span style="color:rgb(55,65,81); font-family: ui-sans-serif, system-ui, -apple-system,'Segeo UI', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                                        Complete the form with your details and identification for security.
+                                    </span>
+                                </p>
+                            </div>
+                    
+                            <!-- 4 -->
+                            <div class="flex flex-col items-start gap-1">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                                    <span class="text-base font-bold leading-7 text-white">4</span>
+                                </div>
+                                <h3 class="text-base font-bold leading-tight text-dark-grey-900">
+                                    <span style="border-color: rgb(217,217,227); border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y:0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ;--tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ;  --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zone: ; --tw-numeric-figure: ; ---tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: 0px: --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.6); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-background-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ;color: var(--tw-prose-bold); font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                        Verify and Submit
+                                    </span>
+                                </h3>
+                                <p class="text-base font-medium leading-7 text-dark-grey-600">
+                                    <span style="color:rgb(55,65,81); font-family: ui-sans-serif, system-ui, -apple-system,'Segeo UI', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                                        Check your information, agree to terms, and submit for account approval.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        
+
+         <!-- contact -->
+        <div class="w-full">
+            <!-- grid container -->
+            <div class="container flex flex-col items-center gap-16 mx-auto my-32 ">
+                <!-- card list -->
+                <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- card -->
+                    <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+                        <span><img src="./assets/component-5/contact-icons/green-email.svg" alt=""></span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900">
+                            Email
+                        </p>
+                        <p class="text-base leading-7 text-dark-grey-600">
+                            Contact Us
+                        </p>
+                        <p class="text-lg font-bold text-green-500" href="mailto: hello@loople.com">
+                            hi@cahebank.com
+                        </p>
+                    </div>
+
+                    <!-- card -->
+                    <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+                        <span><img src="./assets/component-5/contact-icons/green-location-pin.svg" alt=""></span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900">
+                            Location
+                        </p>
+                        <p class="text-base leading-7 text-dark-grey-600">
+                            Find us at our office
+                        </p>
+                        <a class="text-lg font-bold text-green-500" target="_blank" href="https://goo.gle/maps/QcWzYETAh4FS3KTD7">
+                            15 Tech Alley, Cape Town
+                        </a>
+                    </div>
+
+                    <!-- card -->
+                    <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+                        <span><img src="./assets/component-5/contact-icons/green-phone.svg" alt=""></span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900">
+                            Phone
+                        </p>
+                        <p class="text-base leading-7 text-dark-grey-600">
+                            Reach out to us by phone
+                        </p>
+                        <p class="text-lg font-bold text-green-500" href="tel: +216-486-5135">
+                            +216-486-5135
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="container mx-auto">
-        <!-- Centered container for more content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
+
+
+    <!-- FOOTER -->
     <div class="w-full bg-green-500">
-        <!-- Full-width footer container with green background -->
+        <div class="container flex flex-col mx-auto">
+            <div class="flex flex-col items-center gap-6 mb-20">
+                <!-- socials -->
+                <div class="flex items-center gap-8 mt-20">
+                    <a href="javascript:void(0)" class="text-grey-500 hover:text-grey-900">
+                        <img src="./assets/component-5/footer-icons/facebook.svg">
+                    </a>
+                    <a href="javascript:void(0)" class="text-grey-500 hover:text-grey-900">
+                        <img src="./assets/component-5/footer-icons/github.svg">
+                    </a>
+                    <a href="javascript:void(0)" class="text-grey-500 hover:text-grey-900">
+                        <img src="./assets/component-5/footer-icons//insta.svg">
+                    </a>
+                    <a href="javascript:void(0)" class="text-grey-500 hover:text-grey-900">
+                        <img src="./assets/component-5/footer-icons/linkedin.svg">
+                    </a>
+                    <a href="javascript:void(0)" class="text-grey-500 hover:text-grey-900">
+                        <img src="./assets/component-5/footer-icons/twitter-x.svg">
+                    </a>
+                </div>
+
+                <!-- copyright -->
+                 <div class="flex items-center">
+                    <p class="text-base font-normal leading-7 text-center">
+                        2024 Cache Bank. All rights reserved
+                    </p>
+                 </div>
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        document.getElementById("mobile-menu-toggle").addEventListener("click", function() {document.getElementById("mobile-menu").classList.toggle("hidden")})
+    </script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
